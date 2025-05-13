@@ -1,5 +1,7 @@
 # Playwright Login Tests – Guided Evolution with GitHub Copilot
 
+![Playwright](https://img.shields.io/badge/Tested%20with-Playwright-45ba63?logo=playwright)
+
 This project is a **learning-driven exploration** of automated testing using [Playwright](https://playwright.dev/) and AI tools like GitHub Copilot.
 It demonstrates how **iteratively refining prompts** and using **Copilot with intention** can lead to robust, maintainable test suites.
 
@@ -7,19 +9,20 @@ Each version (from `v1-basic` to `v5-final`) reflects a level of maturity, progr
 
 ---
 
-## 🌟 Project Goal
-
+### 🌟 Project Goal
 To study:
 
 * How prompt engineering influences the quality of generated test code
 * Best practices in Playwright E2E testing
 * How GitHub Copilot can be guided with configuration files and prompt strategies
 
+In QA and test automation, most teams start with working tests — few reach reliable, scalable architectures. This project bridges that gap using AI.
+
 > 📁 Check each version in the `/playwright-tests/` folder
 
 ---
 
-## 📊 Test Evolution (v1 to v5)
+### 📊 Test Evolution (v1 to v5)
 
 | Version | File Name             | Description                                                                      |
 | ------- | --------------------- | -------------------------------------------------------------------------------- |
@@ -29,11 +32,21 @@ To study:
 | v4      | `v4-scalable.spec.ts` | Introduces login helper, `describe()` grouping, proper afterEach, timeout tuning |
 | v5      | `v5-final.spec.ts`    | Clean, reusable, professional code with `test.skip` and structured grouping      |
 
+
+
+> 💡 Each version solves a specific pain point:
+> - v1 → gets things working fast (good for PoC or MVP)
+> - v2 → adds debugging value via screenshots
+> - v3 → improves resilience and traceability
+> - v4 → introduces modularity for reusability
+> - v5 → aligns with team-level quality and future growth
+
+
 ---
 
-## 🗌d Getting Started
+### Getting Started
 
-### Prerequisites
+#### Prerequisites
 
 * [Node.js](https://nodejs.org/) installed
 * Install dependencies:
@@ -43,7 +56,7 @@ To study:
   npx playwright install
   ```
 
-### Running Tests
+#### Running Tests
 
 ```bash
 npx playwright test              # Run all tests
@@ -54,7 +67,7 @@ npx playwright show-report       # View HTML report
 
 ---
 
-## 🔢 Tests Included
+### Tests Included
 
 * **Login page elements are visible**
 * **Invalid login shows error**
@@ -66,11 +79,11 @@ npx playwright show-report       # View HTML report
 
 ---
 
-## 🧠 GitHub Copilot Configuration
+### GitHub Copilot Configuration
 
 This project uses **custom Copilot instructions** to guide the generation of technical and clean TypeScript code.
 
-### 🔧 Copilot Settings
+#### Copilot Settings
 
 ```json
 {
@@ -82,7 +95,7 @@ This project uses **custom Copilot instructions** to guide the generation of tec
 }
 ```
 
-### 🛠️ Instruction File (`copilot-instructions.md`)
+#### Instruction File (`copilot-instructions.md`)
 
 ```md
 You are an expert in TypeScript, Frontend development, and Playwright end-to-end testing.
@@ -99,7 +112,7 @@ You write concise, technical TypeScript code with accurate examples and the corr
 
 ---
 
-## 🔎 Prompt Used to Generate Final Version (v5)
+### 🔎 Prompt Used to Generate Final Version (v5)
 
 \[Click to expand]
 
@@ -158,7 +171,7 @@ Observações:
 
 ---
 
-## 🌎 Project Configuration Summary
+### 🌎 Project Configuration Summary
 
 * Global timeout: `60000ms`
 * Headed mode by default (`headless: false`)
@@ -170,7 +183,7 @@ Observações:
 
 ---
 
-## 📂 Project Structure
+### 📂 Project Structure
 
 ```
 /playwright-copilot/
