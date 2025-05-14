@@ -1,0 +1,3 @@
+# Ignorar relatórios e arquivos HTML para o cálculo de linguagem
+playwright-report/* linguist-vendored
+*.html linguist-vendored
